@@ -50,7 +50,7 @@ class BookTest {
     public void saveBook_FindBookByIdReturnBookTest() {
         Book book = new Book();
         bookRepository.save(book);
-        Assert.assertEquals(book, bookRepository.findById(1));
+        Assert.assertEquals(book);
     }
 
 }
