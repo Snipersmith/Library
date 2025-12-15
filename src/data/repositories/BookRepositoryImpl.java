@@ -25,8 +25,4 @@ public class BookRepositoryImpl implements BookRepository {
 
     }
 
-
-    public Book findId(Book book) {
-        return book;
-    }
 }

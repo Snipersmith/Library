@@ -43,14 +43,13 @@ class BookTest {
 
     public void saveBook_BookIsReturnedTest() {
         Book book = new Book();
-        Assert.assertEquals(book, bookRepository.save(book));
+        Assertions.assertEquals(book, bookRepository.save(book));
 
     }
     @Test
-    public void saveBook_FindBookByIdReturnBookTest() {
+    public void saveBook_FindBookById_returnBookTest() {
         Book book = new Book();
         bookRepository.save(book);
-        Assert.assertEquals(book);
+        Assertions.assertEquals(book, bookRepository.save(book));
     }
-
 }
